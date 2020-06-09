@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Course Work</title>
+  </head>
+  <body>
+    <noscript>
+        <div class="warning" >
+            <div class="warning-window">
+                <div class="warning-window__message">
+                    Для восстановления Всемирного Баланса необходимо отключить функцию NoScript
+                </div>
+            </div>
+    </noscript>
+    <div class="start hidden" id="start">
+        <div class="start-window">
+            <div class="start-window__rules">
+                Большие Дела складываются из множества маленьких. Чтобы восстановить Всемирный Баланс, 
+                необходимо приложить множество усилий. Расположите сферы Тьмы и Света в соответствующие 
+                ниши и Ваши усилия пойдут на благо Мира. Сферы Света можно перемещать лишь вправо, 
+                Тьмы - влево, в соседнюю или через одну пустую нишу
+            </div>
+        </div>
+    </div>
+    <div class="game hidden" id="game">
+        <div class="game-field">
+            <div class="game-field__sphere white"></div>
+            <div class="game-field__sphere white"></div>
+            <div class="game-field__sphere white"></div>
+            <div class="game-field__sphere white"></div>
+            <div class="game-field__sphere black"></div>
+            <div class="game-field__sphere black"></div>
+            <div class="game-field__sphere black"></div>
+            <div class="game-field__sphere black"></div>
+        </div>
+        <div class="game-reload" id="reload">Начать заново</div>
+    </div>
+    <div class="win hidden" id="gameOver">
+        <img 
+        src="./src/images/win.gif"
+        class="win-image"
+        id="winImage">
+        <div class="win-message">Баланс Востановлен</div>
+    </div>
+    <audio src="./src/sounds/win.mp3" id="win" loop></audio>
+    <audio src="./src/sounds/gamePlay.mp3" id="gamePlay" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>

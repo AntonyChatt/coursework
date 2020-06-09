@@ -1,0 +1,94 @@
+@font-face{
+    font-family: 'Font';    
+    src: url('./src/fonts/font.otf');   
+}
+@media screen and (min-device-width: 1000px){
+    body{
+        background: url('./src/images/background.jpg') no-repeat;
+    }    
+}
+body{
+    font-family: 'Font';
+    font-size: 24px;
+    background-color: #000000;
+    background-size: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.start,
+.warning,
+.win{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.start-window,
+.warning-window{
+    width: 30%;
+    box-shadow: 0 0 10px 8px rgba(255, 255, 255, .5); 
+    text-align: center;
+    padding: 30px;
+    border-radius: 3px;
+    background-color: #D3D3D3;
+    max-height: 300px;
+    overflow: auto; 
+}
+.game{    
+    background-color: rgba(0, 0, 0, .5);
+    width: 60vw;
+    height: 60vh; 
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    padding-top: 10vh;
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, .5); 
+}
+.game-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.game-reload,
+.win-message{
+    color: #D3D3D3;
+    margin-top: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.game-field__sphere{
+    background-color: #FFFFFF;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    transition: 1.5s;
+} 
+.win{
+    background-color: rgba(0, 0, 0, .9);
+    flex-direction: column;
+} 
+.win-image{
+    height: 70vh;
+    border-radius: 3px;
+    box-shadow: 0 0 10px 8px rgba(255, 255, 255, .5); 
+}
+.hidden{
+    display: none;
+} 
+.white{
+    box-shadow: 0 0 10px 8px rgba(255, 255, 255, .5); 
+}
+.black{
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, .5); 
+}
